@@ -43,9 +43,19 @@ public class AppTest extends FluentTest {
     goTo("http://localhost:4567/");
     fill("#sideA").with("5");
     fill("#sideB").with("5");
+    fill("#sideC").with("4");
+    submit(".btn");
+    assertThat(pageSource()).contains("A triangle with sides 5, 5, and 4");
+  }
+
+  @Test
+  public void equilateralTriangleTypeTest() {
+    goTo("http://localhost:4567/");
+    fill("#sideA").with("5");
+    fill("#sideB").with("5");
     fill("#sideC").with("5");
     submit(".btn");
-    assertThat(pageSource()).contains("A triangle with sides 5, 5, and 5");
+    assertThat(pageSource()).contains("an equilateral");
   }
 
   @Test

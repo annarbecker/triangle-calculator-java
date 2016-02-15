@@ -2,21 +2,25 @@
 <form class="form-inline" action="/home" method="post">
   <div class="form-group">
     <label for="sideA">First Side:</label>
-    <input type="number" class="form-control" name="sideA" id="sideA">
+    <input type="number" class="form-control" name="sideA" id="sideA" required>
   </div>
   <div class="form-group">
     <label for="sideB">Second Side:</label>
-    <input type="number" class="form-control" name="sideB" id="sideB">
+    <input type="number" class="form-control" name="sideB" id="sideB" required>
   </div>
   <div class="form-group">
     <label for="sideC">Third Side:</label>
-    <input type="number" class="form-control" name="sideC" id="sideC">
+    <input type="number" class="form-control" name="sideC" id="sideC" required>
   </div>
   <button type="submit" class="btn btn-success">Submit Your Triangle</button>
 </form>
 
-#if (!$triangle.isTriangle())
-  <h3>That is not a valid triangle! Please enter a new set of lengths.</h3>
-#else
-  <h3>A triangle with sides $triangle.sideLengths() is a $triangle.triangleType() triangle.</h3>
+#if (!$triangle)
+  <h3></h3>
+  #elseif (!$triangle.isTriangle())
+    <h3>$triangle.sideLengths() is not a valid triangle! Please enter a new set of lengths.</h3>
+  #elseif ($triangle.triangleType().equals("equilateral") || $triangle.triangleType().equals("isosceles"))
+    <h3>A triangle with sides $triangle.sideLengths() is an $triangle.triangleType() triangle.</h3>
+  #else
+    <h3>A triangle with sides $triangle.sideLengths() is a $triangle.triangleType() triangle.</h3>
 #end
