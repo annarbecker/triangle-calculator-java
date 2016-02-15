@@ -10,4 +10,10 @@ public class Triangle {
     mSideC = sideC;
   }
 
+  public boolean isTriangle() {
+    if (mSideA + mSideB <= mSideC || mSideB + mSideC <= mSideA || mSideA + mSideC <= mSideB) {
+      return false;
+    }
+    return true;
+  }
 }
