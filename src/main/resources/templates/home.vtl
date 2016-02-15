@@ -1,0 +1,22 @@
+<h2>Enter three side lengths in whole numbers:</h2>
+<form class="form-inline" action="/home" method="post">
+  <div class="form-group">
+    <label for="sideA">First Side:</label>
+    <input type="number" class="form-control" name="sideA" id="sideA">
+  </div>
+  <div class="form-group">
+    <label for="sideB">Second Side:</label>
+    <input type="number" class="form-control" name="sideB" id="sideB">
+  </div>
+  <div class="form-group">
+    <label for="sideC">Third Side:</label>
+    <input type="number" class="form-control" name="sideC" id="sideC">
+  </div>
+  <button type="submit" class="btn btn-success">Submit Your Triangle</button>
+</form>
+
+#if (!$triangle.isTriangle())
+  <h3>That is not a valid triangle! Please enter a new set of lengths.</h3>
+#else
+  <h3>A triangle with sides $triangle.sideLengths() is a $triangle.triangleType() triangle.</h3>
+#end

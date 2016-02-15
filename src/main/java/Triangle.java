@@ -10,6 +10,10 @@ public class Triangle {
     mSideC = sideC;
   }
 
+  public String sideLengths() {
+    return mSideA + ", " + mSideB + ", and " + mSideC;
+  }
+
   public boolean isTriangle() {
     if (mSideA + mSideB <= mSideC || mSideB + mSideC <= mSideA || mSideA + mSideC <= mSideB) {
       return false;
@@ -30,7 +34,7 @@ public class Triangle {
     return "scalene";
   }
 
-  public boolean isRightTriangle() {
+  private boolean isRightTriangle() {
     if ((mSideA * mSideA + mSideB * mSideB) == (mSideC * mSideC)) {
       return true;
     } else if ((mSideA * mSideA + mSideC * mSideC) == (mSideB * mSideB)) {
