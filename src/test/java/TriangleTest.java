@@ -14,4 +14,16 @@ public class TriangleTest {
     Triangle testTriangle = new Triangle(2, 2, 5);
     assertEquals(false, testTriangle.isTriangle());
   }
+
+  @Test
+  public void triangleType_sideLengthsAreNotTriangle_false() {
+    Triangle testTriangle = new Triangle(2, 2, 5);
+    assertEquals("false", testTriangle.triangleType());
+  }
+
+  @Test
+  public void triangleType_sideLengthsAreEqual_equilateral() {
+    Triangle testTriangle = new Triangle (4, 4, 4);
+    assertEquals("equilateral", testTriangle.triangleType());
+  }
 }

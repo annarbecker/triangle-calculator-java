@@ -16,4 +16,14 @@ public class Triangle {
     }
     return true;
   }
+
+  public String triangleType() {
+    if (isTriangle() == false){
+      return "false";
+    }
+    if (mSideA == mSideB && mSideB == mSideC) {
+      return "equilateral";
+    }
+    return "scalene";
+  }
 }
