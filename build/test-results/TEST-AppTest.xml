@@ -1,47 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AppTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-02-15T18:13:58" hostname="epicodus-64.local" time="0.366">
+<testsuite name="AppTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-02-15T18:15:53" hostname="epicodus-64.local" time="0.401">
   <properties/>
-  <testcase name="notATriangleTest" classname="AppTest" time="0.316"/>
-  <testcase name="triangleTypeTest" classname="AppTest" time="0.028"/>
-  <testcase name="rootTest" classname="AppTest" time="0.013"/>
+  <testcase name="notATriangleTest" classname="AppTest" time="0.311"/>
+  <testcase name="triangleTypeTest" classname="AppTest" time="0.026"/>
+  <testcase name="rootTest" classname="AppTest" time="0.014"/>
+  <testcase name="multipleTriangleTypeTest" classname="AppTest" time="0.036"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[[Thread-4] INFO spark.webserver.SparkServer - == Spark has ignited ...
 [Thread-4] INFO spark.webserver.SparkServer - >> Listening on 0.0.0.0:4567
 [Thread-4] INFO org.eclipse.jetty.server.Server - jetty-9.0.2.v20130417
-[Thread-4] INFO org.eclipse.jetty.server.ServerConnector - Started ServerConnector@293e1b93{HTTP/1.1}{0.0.0.0:4567}
-Feb 15, 2016 10:13:59 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+[Thread-4] INFO org.eclipse.jetty.server.ServerConnector - Started ServerConnector@412242bc{HTTP/1.1}{0.0.0.0:4567}
+Feb 15, 2016 10:15:54 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
 INFO: Bad input type: "number", creating a text input
-Feb 15, 2016 10:13:59 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+Feb 15, 2016 10:15:54 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
 INFO: Bad input type: "number", creating a text input
-Feb 15, 2016 10:13:59 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+Feb 15, 2016 10:15:54 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
 INFO: Bad input type: "number", creating a text input
-Feb 15, 2016 10:13:59 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+Feb 15, 2016 10:15:54 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
 INFO: Bad input type: "number", creating a text input
-Feb 15, 2016 10:13:59 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+Feb 15, 2016 10:15:54 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
 INFO: Bad input type: "number", creating a text input
-Feb 15, 2016 10:13:59 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+Feb 15, 2016 10:15:54 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
 INFO: Bad input type: "number", creating a text input
-Feb 15, 2016 10:13:59 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+Feb 15, 2016 10:15:54 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
 INFO: Bad input type: "number", creating a text input
-Feb 15, 2016 10:13:59 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+Feb 15, 2016 10:15:54 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
 INFO: Bad input type: "number", creating a text input
-Feb 15, 2016 10:13:59 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+Feb 15, 2016 10:15:54 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
 INFO: Bad input type: "number", creating a text input
-Feb 15, 2016 10:13:59 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+Feb 15, 2016 10:15:54 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
 INFO: Bad input type: "number", creating a text input
-Feb 15, 2016 10:13:59 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+Feb 15, 2016 10:15:54 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
 INFO: Bad input type: "number", creating a text input
-Feb 15, 2016 10:13:59 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+Feb 15, 2016 10:15:54 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
 INFO: Bad input type: "number", creating a text input
-Feb 15, 2016 10:13:59 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+Feb 15, 2016 10:15:54 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
 INFO: Bad input type: "number", creating a text input
-Feb 15, 2016 10:13:59 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+Feb 15, 2016 10:15:54 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
 INFO: Bad input type: "number", creating a text input
-Feb 15, 2016 10:13:59 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+Feb 15, 2016 10:15:54 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+INFO: Bad input type: "number", creating a text input
+Feb 15, 2016 10:15:54 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+INFO: Bad input type: "number", creating a text input
+Feb 15, 2016 10:15:54 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+INFO: Bad input type: "number", creating a text input
+Feb 15, 2016 10:15:54 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+INFO: Bad input type: "number", creating a text input
+Feb 15, 2016 10:15:54 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+INFO: Bad input type: "number", creating a text input
+Feb 15, 2016 10:15:54 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+INFO: Bad input type: "number", creating a text input
+Feb 15, 2016 10:15:54 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+INFO: Bad input type: "number", creating a text input
+Feb 15, 2016 10:15:54 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+INFO: Bad input type: "number", creating a text input
+Feb 15, 2016 10:15:54 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
+INFO: Bad input type: "number", creating a text input
+Feb 15, 2016 10:15:54 AM com.gargoylesoftware.htmlunit.html.InputElementFactory createElementNS
 INFO: Bad input type: "number", creating a text input
 [Test worker] INFO spark.webserver.SparkServer - >>> Spark shutting down ...
-[Test worker] INFO org.eclipse.jetty.server.Server - Graceful shutdown org.eclipse.jetty.server.Server@37adb280 by 
-[Test worker] INFO org.eclipse.jetty.server.ServerConnector - Stopped ServerConnector@293e1b93{HTTP/1.1}{0.0.0.0:4567}
+[Test worker] INFO org.eclipse.jetty.server.Server - Graceful shutdown org.eclipse.jetty.server.Server@4e65b5bf by 
+[Test worker] INFO org.eclipse.jetty.server.ServerConnector - Stopped ServerConnector@412242bc{HTTP/1.1}{0.0.0.0:4567}
 [Test worker] INFO spark.webserver.SparkServer - done
 ]]></system-err>
 </testsuite>

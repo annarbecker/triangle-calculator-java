@@ -47,4 +47,18 @@ public class AppTest extends FluentTest {
     submit(".btn");
     assertThat(pageSource()).contains("A triangle with sides 5, 5, and 5");
   }
+
+  @Test
+  public void multipleTriangleTypeTest() {
+    goTo("http://localhost:4567/");
+    fill("#sideA").with("5");
+    fill("#sideB").with("5");
+    fill("#sideC").with("5");
+    submit(".btn");
+    fill("#sideA").with("3");
+    fill("#sideB").with("4");
+    fill("#sideC").with("5");
+    submit(".btn");
+    assertThat(pageSource()).contains("A triangle with sides 3, 4, and 5 is a right triangle");
+  }
 }
