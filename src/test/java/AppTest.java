@@ -37,4 +37,14 @@ public class AppTest extends FluentTest {
     submit(".btn");
     assertThat(pageSource()).contains("is not a valid triangle");
   }
+
+  @Test
+  public void triangleTypeTest() {
+    goTo("http://localhost:4567/");
+    fill("#sideA").with("5");
+    fill("#sideB").with("5");
+    fill("#sideC").with("5");
+    submit(".btn");
+    assertThat(pageSource()).contains("A triangle with sides 5, 5, and 5");
+  }
 }
