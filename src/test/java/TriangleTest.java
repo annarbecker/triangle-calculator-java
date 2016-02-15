@@ -38,4 +38,10 @@ public class TriangleTest {
     Triangle testTriangle = new Triangle (2, 3, 4);
     assertEquals("scalene", testTriangle.triangleType());
   }
+
+  @Test
+  public void triangleType_sideLengthsPassPythagoras_rightTriangle() {
+    Triangle testTriangle = new Triangle (97, 72, 65);
+    assertEquals("right", testTriangle.triangleType());
+  }
 }

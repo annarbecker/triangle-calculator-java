@@ -20,13 +20,25 @@ public class Triangle {
   public String triangleType() {
     if (isTriangle() == false){
       return "false";
-    }
-    if (mSideA == mSideB && mSideB == mSideC) {
+    } else if(isRightTriangle()) {
+      return "right";
+    } else if (mSideA == mSideB && mSideB == mSideC) {
       return "equilateral";
-    }
-    if (mSideA == mSideB || mSideA == mSideC || mSideB == mSideC) {
+    } else if (mSideA == mSideB || mSideA == mSideC || mSideB == mSideC) {
       return "isosceles";
     }
     return "scalene";
+  }
+
+  public boolean isRightTriangle() {
+    if ((mSideA * mSideA + mSideB * mSideB) == (mSideC * mSideC)) {
+      return true;
+    } else if ((mSideA * mSideA + mSideC * mSideC) == (mSideB * mSideB)) {
+      return true;
+    } else if ((mSideC * mSideC + mSideB * mSideB) == (mSideA * mSideA)) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }
