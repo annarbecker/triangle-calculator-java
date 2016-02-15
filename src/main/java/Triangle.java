@@ -24,6 +24,9 @@ public class Triangle {
     if (mSideA == mSideB && mSideB == mSideC) {
       return "equilateral";
     }
+    if (mSideA == mSideB || mSideA == mSideC || mSideB == mSideC) {
+      return "isosceles";
+    }
     return "scalene";
   }
 }

@@ -26,4 +26,16 @@ public class TriangleTest {
     Triangle testTriangle = new Triangle (4, 4, 4);
     assertEquals("equilateral", testTriangle.triangleType());
   }
+
+  @Test
+  public void triangleType_twoSideLengthsAreEqual_isosceles() {
+    Triangle testTriangle = new Triangle (4, 4, 6);
+    assertEquals("isosceles", testTriangle.triangleType());
+  }
+
+  @Test
+  public void triangleType_noSideLenghtsAreEqual_scalene() {
+    Triangle testTriangle = new Triangle (2, 3, 4);
+    assertEquals("scalene", testTriangle.triangleType());
+  }
 }
